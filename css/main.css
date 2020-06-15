@@ -242,6 +242,9 @@ color: var(--accent-color);
 
 
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-family: Roboto;
@@ -269,8 +272,30 @@ color: var(--accent-color);
   }
 
 /* Our team */
-.section team {
+.team {
+  display: block;
+  width: 1600px;
   background-color: #f5f4fa;
+}
+.container-team{
+  padding: 94px 15px;
+}
+
+
+.team-list{
+  display: flex;
+  justify-content: center;
+}
+
+.team-list .item{
+  width: 270px;
+  background-color: var(--primary-fon-color);
+  box-shadow: #757575;
+}
+
+
+.team-list .item:not(:last-child){
+  margin-right: 30px; 
 }
 
 .team-list .title {
@@ -292,6 +317,10 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03rem;
+}
+
+.socials .item{
+  display: none;
 }
 
 /* footer */

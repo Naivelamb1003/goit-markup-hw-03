@@ -41,6 +41,13 @@ body {
   letter-spacing: 0.03rem;
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
 ul {
   list-style: none;
 }
@@ -67,16 +74,11 @@ a {
 
 /* Site header */
 
-.container{
+.header{
   display: flex;
   align-items: center;
-  
-  margin-left: auto;
-  margin-right: auto;
   width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  
+ 
 }
   
 .site-nav{
@@ -135,26 +137,26 @@ color: var(--accent-color);
 /* Said bar */
 
 .container-img{
-
+  max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  
+  background-position: center;
+  background-color:  var(--primary-text-color);
+}
 
+.container-img .container{
+  padding: 200px 15px;
+  text-align: center;
 }
 
 .container-img .title {
   
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0px;
-  width: 700px;
+  margin-bottom: 30px;
 
   color: var(--primary-fon-color);
-  background-color: royalblue; /* todo real background*/
-
+  
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -167,7 +169,7 @@ color: var(--accent-color);
 .button {
 
   display: inline-block;
-  margin-left: 700px;
+  margin-left: auto;
   margin-right: auto;
   min-width: 200px;
   padding: 10px 31px;
@@ -187,20 +189,13 @@ color: var(--accent-color);
 
 /* features */
 
-.section-features{
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  
-  }
+.container-features{
+  padding: 94px 0px;
+}
 
 .features-list{
   display: flex;
- 
-}
+ }
 
 .features-list .item:not(:last-child) {
   margin-right: 30px;
@@ -231,13 +226,8 @@ color: var(--accent-color);
 
 /* specialization */
 
-.section{
-  margin-top: 94px ;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+.section .container {
+ padding: 94px 15px;
 }
 
 
@@ -250,7 +240,7 @@ color: var(--accent-color);
   font-family: Roboto;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03rem;
 
@@ -273,14 +263,8 @@ color: var(--accent-color);
 
 /* Our team */
 .team {
-  display: block;
-  width: 1600px;
-  background-color: #f5f4fa;
+ background-color: #f5f4fa;
 }
-.container-team{
-  padding: 94px 15px;
-}
-
 
 .team-list{
   display: flex;
@@ -288,7 +272,6 @@ color: var(--accent-color);
 }
 
 .team-list .item{
-  width: 270px;
   background-color: var(--primary-fon-color);
   box-shadow: #757575;
 }
@@ -323,10 +306,36 @@ letter-spacing: 0.03rem;
   display: none;
 }
 
+/* Regular customers */
+
+
+.section .cust-list{
+  display: flex;
+  justify-content: center;
+} 
+
+.cust-list .item{
+outline:1px solid #AFB1B8; 
+width:170px;
+height:90px;
+text-align: center;
+
+}
+
+.cust-list .item:not(:last-child){
+  margin-right: 30px; 
+}
+
 /* footer */
 
 .footer {
   background-color: #2f303a;
+}
+
+.container-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0px 28px;
 }
 
 .logo-footer {

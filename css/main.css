@@ -137,7 +137,7 @@ color: var(--accent-color);
 /* Said bar */
 
 .container-img{
-  max-width: 1600px;
+  /* max-width: 1600px; */
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -168,7 +168,6 @@ color: var(--accent-color);
 
 .button {
 
-  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   min-width: 200px;
@@ -348,10 +347,20 @@ text-align: center;
 }
 
 .footer-address {
+  margin-top: 0px;
+
   color: #ffffff;
 }
 .footer-contact {
+  font-style: inherit;
+
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact a{
+  display: block;
+  margin-top: 9px;
+  margin-left: 0px;
+  padding: 0px;
 }
 
 .footer-link h3 {
@@ -363,10 +372,34 @@ text-align: center;
 }
 
 .footer-slogan {
+  
+  margin-bottom: 0px;
+
+  text-align: center;
+
   color: rgba(255, 255, 255, 0.4);
 }
+ 
+
+/* */ 
 
 /*portfolio-button*/
+
+.container-nav{
+  margin-top: 90px;
+  margin-bottom: 50px;
+
+}
+
+.list-nav{
+  display:flex;
+  justify-content: center;
+}
+
+.portfolio-button:not(:last-child) {
+  margin-right: 8px;
+
+}
 
 .section-none{
   display: none;
@@ -393,7 +426,7 @@ text-align: center;
 /*portfolio*/
   
  .section-portfolio{
-   width: 1230px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;

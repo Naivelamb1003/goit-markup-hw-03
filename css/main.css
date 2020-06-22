@@ -250,13 +250,17 @@ color: var(--accent-color);
   display: flex;
 }
 
+.specialization-list .item{
+  background-color: #5A5B62;
+}
+ 
+
 .specialization-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 
 .specialization-list .text {
-  display: none;
   color: var(--primary-fon-color);
   text-align: center;
   }
@@ -300,10 +304,6 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03rem;
-}
-
-.socials .item{
-  display: none;
 }
 
 /* Regular customers */
@@ -373,6 +373,25 @@ text-align: center;
   color: #ffffff;
 }
 
+.button-footer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px 31px;
+  border: 1px solid transparent;
+  
+  color: var(--primary-fon-color);
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06rem;
+
+}
 
 /* */ 
 
@@ -406,6 +425,8 @@ text-align: center;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03rem;
+  border: 0px solid #000;
+  border-radius: 4px; 
 }
 
 .portfolio-button button:hover,
@@ -497,7 +518,7 @@ text-align: center;
 
 .portfolio-list .text {
 
-  display: none;
+  background-color: #2196F3;;
   color: var(--primary-fon-color);
   
   font-family: Roboto;
